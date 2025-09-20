@@ -12,6 +12,7 @@ export default function Home() {
         <p>Server Rendered page</p>
         <p>SERVER_SIDE - {process.env["SERVER_SIDE"]}</p>
         <p>NEXT_PUBLIC_SERVER_SIDE - {process.env["NEXT_PUBLIC_SERVER_SIDE"]}</p>
+        
       </main>
     </div>
   );

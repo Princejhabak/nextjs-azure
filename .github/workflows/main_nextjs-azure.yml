@@ -65,7 +65,7 @@ jobs:
         with:
           app-name: 'nextjs-azure'
           slot-name: 'Production'
-          package: ./build/standalone
+          package: ./next/standalone
         env:
           SERVER_SIDE: ${{ secrets.SERVER_SIDE }}
           NEXT_PUBLIC_SERVER_SIDE: ${{ secrets.NEXT_PUBLIC_SERVER_SIDE }}

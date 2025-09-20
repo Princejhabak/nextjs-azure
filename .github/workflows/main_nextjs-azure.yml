@@ -29,6 +29,11 @@ jobs:
           npm run build
           mv ./build/static ./build/standalone/build
           mv ./public ./build/standalone
+        env:
+          SERVER_SIDE: ${{ secrets.SERVER_SIDE }}
+          NEXT_PUBLIC_SERVER_SIDE: ${{ secrets.NEXT_PUBLIC_SERVER_SIDE }}
+          CLIENT_SIDE: ${{ secrets.CLIENT_SIDE }}
+          NEXT_PUBLIC_CLIENT_SIDE: ${{ secrets.NEXT_PUBLIC_CLIENT_SIDE }}
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
@@ -63,3 +68,8 @@ jobs:
           app-name: 'nextjs-azure'
           slot-name: 'Production'
           package: ./build/standalone
+        env:
+          SERVER_SIDE: ${{ secrets.SERVER_SIDE }}
+          NEXT_PUBLIC_SERVER_SIDE: ${{ secrets.NEXT_PUBLIC_SERVER_SIDE }}
+          CLIENT_SIDE: ${{ secrets.CLIENT_SIDE }}
+          NEXT_PUBLIC_CLIENT_SIDE: ${{ secrets.NEXT_PUBLIC_CLIENT_SIDE }}

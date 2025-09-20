@@ -8,11 +8,11 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <p>Hello World</p>
+        <p>Hello World v2</p>
         <p>Server Rendered page</p>
         <p>SERVER_SIDE - {process.env["SERVER_SIDE"]}</p>
         <p>NEXT_PUBLIC_SERVER_SIDE - {process.env["NEXT_PUBLIC_SERVER_SIDE"]}</p>
-        
+
       </main>
     </div>
   );

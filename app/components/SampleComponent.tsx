@@ -7,7 +7,7 @@ const SampleComponent = () => {
 
   return (
     <div>
-       <p>Client Rendered page</p>
+       <p>Client Rendered page v2</p>
         <p>CLIENT_SIDE - {process.env["CLIENT_SIDE"]}</p>
         <p>NEXT_PUBLIC_CLIENT_SIDE - {process.env["NEXT_PUBLIC_CLIENT_SIDE"]}</p>
     </div>
